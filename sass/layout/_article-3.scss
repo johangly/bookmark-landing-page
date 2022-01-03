@@ -1,0 +1,16 @@
+@import "../variable";
+body {
+    .container {
+        .article__3 {
+            h2 {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            p {
+                text-align: center;
+                font-size: clamp(0.8rem, 2.4vw, 0.9rem);
+                color: #9194a1;
+            }
+        }
+    }
+}

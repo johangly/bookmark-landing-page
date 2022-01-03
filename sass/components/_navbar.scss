@@ -1,0 +1,104 @@
+@import "_variable.scss";
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .nav {
+        width: 100%;
+        background: #fbfbfb;
+        position: sticky;
+        z-index: 30;
+        top: 0;
+        .nav__container {
+            width: 80%;
+            height: 90px;
+            align-items: center;
+            top: 0;
+            z-index: 30;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            .logo__container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .mobile-btn {
+                display: none;
+                img {
+                    width: 22px;
+                    box-sizing: content-box;
+                    padding: 10px;
+                }
+            }
+            div {
+                .nav__link {
+                    text-decoration: none;
+                    color: #333;
+                    margin-left: 45px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    &:hover {
+                        color: $color-2;
+                    }
+                }
+                button {
+                    margin-left: 45px;
+                    border: none;
+                    padding: 9px 30px;
+                    background: $color-2;
+                    border-radius: 5px;
+                    -webkit-box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
+                    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
+                    &:hover {
+                        outline: 2px solid $color-2;
+                        background: transparent;
+                    }
+                    &:hover a {
+                        color: $color-2;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//responsive
+@media only screen and (max-width: 786px) {
+    body {
+        .nav {
+            div:nth-child(3) {
+                a {
+                    margin-left: 20px;
+                }
+                button {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    body {
+        .nav {
+            .nav__container {
+                div:nth-child(3) {
+                    display: none;
+                }
+                .mobile-btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+@import "_variable.scss";
+body {
+    .container {
+        .accordion {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 90px;
+            .accordion__button {
+                display: flex;
+                align-items: center;
+                border: none;
+                background-color: transparent;
+                border-bottom: 1px solid hsla(229, 8%, 60%, 0.431);
+                justify-content: space-between;
+                // width: 45%;
+                // max-width: 450px;
+                min-width: 420px;
+                padding: 15px 0;
+                img {
+                    margin-right: 15px;
+                    filter: $filter-1;
+                    transition: 200ms all ease;
+                }
+                &:hover img {
+                    filter: $filter-2;
+                }
+                &:hover p {
+                    color: $color-2;
+                }
+                p {
+                    color: #333;
+                    text-align: left;
+                    font-size: clamp(.9rem, 2.5vw, 1rem);
+                }
+            }
+            .active {
+                img {
+                    filter: $filter-2;
+                    transform: rotate(180deg);
+                }
+            }
+            .accordion__content {
+                max-height: 0px;
+                max-width: 420px;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                p {
+                    font-size: clamp(0.8rem, 2.4vw, 0.9rem);
+                    padding: 20px 0;
+                    color: #808080;
+                    line-height: 25px;
+                }
+            }
+            .accordion__button:nth-child(1) {
+                border-top: 1px solid hsla(229, 8%, 60%, 0.431);
+            }
+            .more__info {
+                margin: 20px;
+                padding: 14px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px;
+                background-color: #5368df;
+                border: none;
+                a {
+                    color: #fff;
+                    font-size: 15px;
+                    text-decoration: none;
+                }
+                &:hover {
+                    outline: 2px solid #5368df;
+                    background: transparent;
+                }
+                &:hover a {
+                    color: $color-1
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 446px) {
+    body {
+        .container {
+            .accordion {
+                .accordion__button {
+                    min-width: 100%;
+                }
+                .accordion__content {
+                    min-width: 100%;
+                }
+            }
+        }
+    }
+}
