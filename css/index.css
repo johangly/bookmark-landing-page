@@ -157,7 +157,7 @@ body .container .accordion .more__info:hover a { color: #5368df; }
 @media only screen and (max-width: 446px) { body .container .accordion .accordion__button { min-width: 100%; }
   body .container .accordion .accordion__content { min-width: 100%; } }
 body .gmail__section { width: 100%; background: #5368df; min-height: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
-body .gmail__section p { letter-spacing: 3px; font-size: .8rem; text-transform: uppercase; text-align: center; color: #fff; margin-bottom: 35px; }
+body .gmail__section p { letter-spacing: 3px; font-size: .8rem; text-transform: uppercase; text-align: center; color: #fff; margin-bottom: 35px; margin-top: 20px; }
 body .gmail__section h4 { font-size: 1.5rem; font-weight: 500; margin-bottom: 15px; color: #fff; text-align: center; }
 body .gmail__section form { margin: 15px 10px 0 10px; display: flex; align-items: flex-start; }
 body .gmail__section form .input { display: flex; margin: 0 10px 0 0; position: relative; flex-direction: column; }
@@ -168,11 +168,11 @@ body .gmail__section form button { margin-left: 0; padding: 12px 25px; margin-ri
 body .gmail__section form button:hover { outline: 2px solid #fa5757; background: #fbfbfb; color: #fa5757; }
 
 @media only screen and (max-width: 443px) { body .gmail__section form { flex-direction: column; justify-content: center; align-items: center; display: flex; max-width: 82%; width: 82%; }
-  body .gmail__section form button { margin: 0; margin-top: 15px; width: 100%; }
-  body .gmail__section form .input { margin-right: 0; width: 100%; margin-bottom: 5px; }
+  body .gmail__section form button { margin: 0; margin-bottom: 20px; width: 100%; }
+  body .gmail__section form .input { margin-right: 0; width: 100%; margin-bottom: 20px; }
   body .gmail__section form .input input { margin: 0; width: 100%; } }
 body footer { width: 100%; background: #252b46; min-height: 90px; align-items: center; display: flex; justify-content: center; }
-body footer .footer__links { display: flex; width: 40%; justify-content: space-evenly; font-size: 14px; font-weight: 400; align-items: center; }
+body footer .footer__links { display: flex; width: 40%; justify-content: space-between; font-size: 14px; font-weight: 400; align-items: center; }
 body footer .footer__links a { color: #fbfbfb; }
 body footer .footer__links a:hover { color: #fa5757; }
 body footer .footer__social { width: 40%; display: flex; justify-content: flex-end; }
@@ -182,7 +182,7 @@ body footer .footer__social img:hover { filter: brightness(0) saturate(100%) inv
 @media only screen and (max-width: 1017px) { body footer { flex-direction: column; }
   body footer .footer__links { margin-top: 25px; flex-direction: column; width: 100%; }
   body footer .footer__links * { margin-bottom: 25px; }
-  body footer .footer__social { justify-content: center; width: 100%; }
+  body footer .footer__social { justify-content: center; margin-bottom: 25px; width: 100%; }
   body footer .footer__social img { margin: 15px !important; } }
 
 /*# sourceMappingURL=index.css.map */

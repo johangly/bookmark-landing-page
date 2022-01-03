@@ -10,7 +10,7 @@ body {
         .footer__links {
             display: flex;
             width: 40%;
-            justify-content: space-evenly;
+            justify-content: space-between;
             font-size: 14px;
             font-weight: 400;
             align-items: center;
@@ -49,6 +49,7 @@ body {
             }
             .footer__social {
                 justify-content: center;
+                margin-bottom: 25px;
                 width: 100%;
                 img {
                     margin: 15px !important;
