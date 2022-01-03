@@ -67,7 +67,7 @@ body .hero .hero__right { display: flex; align-items: center; justify-content: c
 body .hero .hero__right img { max-width: 100%; z-index: 10; -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7)); filter: drop-shadow(10px 9px 8px rgba(0, 0, 0, 0.205)); }
 body .hero .hero__right .blue-blob { width: 40vw; right: 0; height: clamp(200px, 24.1vw, 300px); margin-top: 110px; border-top-left-radius: 180px; border-bottom-left-radius: 180px; position: absolute; background: #5368df; }
 
-@media only screen and (max-width: 699px) { body .container .hero { display: grid; min-height: calc(100vh - 90px); gap: 10px; grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
+@media only screen and (max-width: 699px) { body .container .hero { display: grid; min-height: calc(100vh - 90px); gap: 25px; grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; margin-bottom: 80px; }
   body .container .hero .hero__left { justify-content: center; align-items: center; order: 2; }
   body .container .hero .hero__left h1 { text-align: center; font-weight: 500; }
   body .container .hero .hero__left p { text-align: center; }
