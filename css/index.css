@@ -111,7 +111,7 @@ body .container .interactive__section .section__1 .section__1--text button a { c
 body .container .interactive__section .section__2 { display: none; }
 body .container .interactive__section .section__3 { display: none; }
 
-@media only screen and (max-width: 699px) { body .container .interactive__section .section__1 { display: grid; min-height: 80vh; gap: 10px; grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
+@media only screen and (max-width: 699px) { body .container .interactive__section .section__1 { display: grid; min-height: 80vh; gap: 10px; grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; row-gap: 50px; }
   body .container .interactive__section .section__1 .section__1--img .blue-blob { width: 100%; left: -40px; margin-top: 145px; height: clamp(110px, 37.1vw, 300px); }
   body .container .interactive__section .section__1 .section__1--text { justify-content: center; align-items: center; }
   body .container .interactive__section .section__1 .section__1--text h2 { text-align: center; }
