@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Bookmark landing page</title>
+    <style>
+        .attribution {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!--! RESPONSIVE NAVBAR-->
+    <nav id="responsive__navbar" class="reponsive__navbar">
+        <div class="nav__container--1">
+            <a class="nav__link" href="">FEATURES</a>
+            <a class="nav__link" href="">PRICING</a>
+            <a class="nav__link" href="">CONTACT</a>
+            <button>
+                  <a href="">LOGIN</a>
+            </button>
+        </div>
+        <div class="nav__container--2">
+            <img src="images/svg/icon-facebook.svg" alt="facebook">
+            <img src="images/svg/icon-twitter.svg" alt="twitter">
+        </div>
+    </nav>
+    <!--! NAVBAR-->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <div class="logo__container">
+                <img id="logo" src="images/svg/logo-bookmark.svg" alt="logo">
+            </div>
+            <div class="mobile-btn">
+                <img id="responsive__button" src="images/svg/icon-hamburger.svg" alt="">
+            </div>
+            <div>
+                <a class="nav__link" href="">FEATURES</a>
+                <a class="nav__link" href="">PRICING</a>
+                <a class="nav__link" href="">CONTACT</a>
+                <button>
+                  <a href="">LOGIN</a>
+            </button>
+            </div>
+        </div>
+
+    </nav>
+    <div class="container">
+        <!--! HERO-->
+        <header class="hero">
+            <div class="hero__left">
+                <h1>A Simple Bookmark<br>Manager</h1>
+                <p>A clean and simple interface to organize your favourite<br> websites. Open a new browser tab and see your sites load<br>instantly. Try it for free.</p>
+                <div class="hero__btn">
+                    <button><a href="#">Get it on Chrome</a></button>
+                    <button><a href="#">Get it on Firefox</a></button>
+
+                </div>
+
+            </div>
+            <div class="hero__right">
+                <img src="images/svg/illustration-hero.svg" alt="">
+                <div class="blue-blob"></div>
+            </div>
+        </header>
+        <!--! ARTICULO 1 -->
+        <article class="article">
+            <h2>Features</h2>
+            <p>Our aim is to make it quick and easy for you to access your <br>favourite websites. Your bookmarks sync between your devices<br> so you can access them on the go.</p>
+        </article>
+        <!--! ARTICULO 2 -->
+        <article class="article__2">
+            <div class="button__container">
+                <button id="interactive__btn--1" class="button button__active">Simple Bookmarking</button>
+                <button id="interactive__btn--2" class="button">Speedy Searching</button>
+                <button id="interactive__btn--3" class="button">Easy Sharing</button>
+            </div>
+        </article>
+        <!--! INTERACTIVE SECTION -->
+        <section class="interactive__section">
+            <div class="section__1">
+                <div class="section__1--img">
+                    <img id="interactive__img" src="" alt="">
+                    <div class="blue-blob"></div>
+                </div>
+                <div class="section__1--text">
+                    <h2 id="interactive__tittle"></h2>
+                    <p id="interactive__text"></p>
+                    <button><a href="#">More Info</a></button>
+                </div>
+            </div>
+        </section>
+        <article class="article__3 article">
+            <h2>Download the extension</h2>
+            <p>We’ve got more browsers in the pipeline. Please do let us know if<br>you’ve got a favourite you’d like us to prioritize.</p>
+            <!--! INTERACTIVE SECTION -->
+            <!--! INTERACTIVE SECTION -->
+        </article>
+        <!--! INTERACTIVE SECTION 2 CARDS-->
+        <section class="interactive__section--2">
+            <div class="section__2">
+                <div class="card">
+                    <div class="card__body">
+                        <div class="card__img">
+                            <img src="images/svg/logo-chrome.svg" alt="google-chrome">
+                            <h3>Add to Chrome</h3>
+                            <p>Minimum version 62</p>
+                        </div>
+                        <img class="hr-img" src="images/svg/bg-dots.svg" alt="">
+                        <div class="card__button"><button><a href="">Add & Install Extension</a></button></div>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__img">
+                            <img src="images/svg/logo-firefox.svg" alt="Firefox">
+                            <h3>Add to Firefox</h3>
+                            <p>Minimum version 55</p>
+                        </div>
+                        <img class="hr-img" src="images/svg/bg-dots.svg" alt="">
+                        <div class="card__button"><button><a href="images/svg/logo-firefox.svg">Add & Install Extension</a></button>
+                        </div>
+                    </div>
+                    <div class="card__body">
+                        <div class="card__img">
+                            <img src="images/svg/logo-opera.svg" alt="Opera">
+                            <h3>Add to Opera</h3>
+                            <p>Minimum version 46</p>
+                        </div>
+                        <img class="hr-img" src="images/svg/bg-dots.svg" alt="">
+                        <div class="card__button"><button><a href="">Add & Install Extension<a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--! ARTICLE 3 -->
+        <article class="article__3 article">
+            <h2>Frequently Asked Questions</h2>
+            <p>Here are some of our FAQs. If you have any other questions<br>you’d like answered please feel free to email us.</p>
+        </article>
+        <!--! ACCORDION -->
+        <section class="accordion">
+            <!-- ACCORDION 1 -->
+
+            <button id="accordion-1" class="accordion__button"><p>What is Bookmark?</p><img src="images/svg/icon-arrow.svg" alt=""></button>
+            <div class="accordion__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+            </div>
+            <!-- ACCORDION 2 -->
+
+            <button id="accordion-2" class="accordion__button"><p>How can I request a new browser?</p><img src="images/svg/icon-arrow.svg" alt=""></button>
+            <div class="accordion__content">
+                <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus
+                    luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+            </div>
+            <!-- ACCORDION 3 -->
+
+            <button id="accordion-3" class="accordion__button"><p>Is there a mobile app?</p><img src="images/svg/icon-arrow.svg" alt=""></button>
+            <div class="accordion__content">
+                <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
+            </div>
+            <!-- ACCORDION 4 -->
+
+            <button id="accordion-4" class="accordion__button"><p>What about other Chromium browsers?</p><img src="images/svg/icon-arrow.svg" alt=""></button>
+            <div class="accordion__content">
+                <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+            </div>
+            <button class="more__info"><a href="">More Info</a></button>
+        </section>
+    </div>
+    <!--! GMAIL SECTION -->
+    <section class="gmail__section">
+        <p>35,000+ already joined</p>
+        <h4>Stay up-to-date with what<br>we’re doing</h4>
+        <form id="email__form">
+            <div class="input">
+                <input type="email" placeholder="Enter your email address" name="email" id="email__input">
+                <span id="message"></span>
+            </div>
+            <button id="email__button">Contact Us</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer__links">
+            <img src="images/svg/logo-footer.svg" alt="">
+            <a class="footer__link" href="">FEATURES</a>
+            <a class="footer__link" href="">PRICING</a>
+            <a class="footer__link" href="">CONTACT</a>
+        </div>
+        <div class="footer__social">
+            <img src="images/svg/icon-facebook.svg" alt="facebook">
+            <img src="images/svg/icon-twitter.svg" alt="twitter">
+        </div>
+    </footer>
+    <!--! ATRIBUTION -->
+
+    <div>
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/johangly">Johangly Sucre</a>.
+        </p>
+    </div>
+    <script src="js/scripts/interactive__section.js"></script>
+</body>
+
+</html>
