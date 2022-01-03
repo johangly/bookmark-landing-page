@@ -100,7 +100,7 @@ body {
             .hero {
                 display: grid;
                 min-height: calc(100vh - 90px);
-                gap: 10px;
+                gap: 25px;
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr 1fr;
                 .hero__left {
