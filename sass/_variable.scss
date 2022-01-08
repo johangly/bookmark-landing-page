@@ -1,0 +1,13 @@
+// Principal Colors
+// $color-1: #00ce00;
+$color-1: #5368df;
+$color-2: #fa5757;
+// Neutral Colors
+$color-3: hsl(229, 8%, 60%);
+$color-4: hsl(229, 31%, 21%);
+$filter-1: brightness(0) saturate(100%) invert(44%) sepia(99%) saturate(2933%) hue-rotate(217deg) brightness(89%) contrast(96%);
+$filter-2:brightness(0) saturate(100%) invert(50%) sepia(27%) saturate(6346%) hue-rotate(329deg) brightness(100%) contrast(97%);
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+$principal-font: "Rubik",
+sans-serif;

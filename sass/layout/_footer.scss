@@ -1,0 +1,60 @@
+@import "_variable.scss";
+body {
+    footer {
+        width: 100%;
+        background: $color-4;
+        min-height: 90px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        .footer__links {
+            display: flex;
+            width: 40%;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: 400;
+            align-items: center;
+            a {
+                color: #fbfbfb;
+                &:hover {
+                    color: $color-2;
+                }
+            }
+        }
+        .footer__social {
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
+            img {
+                margin-left: 40px;
+                &:hover {
+                    filter: $filter-2;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1017px) {
+    body {
+        footer {
+            flex-direction: column;
+            .footer__links {
+                margin-top: 25px;
+                flex-direction: column;
+                width: 100%;
+                & * {
+                    margin-bottom: 25px;
+                }
+            }
+            .footer__social {
+                justify-content: center;
+                margin-bottom: 25px;
+                width: 100%;
+                img {
+                    margin: 15px !important;
+                }
+            }
+        }
+    }
+}

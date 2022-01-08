@@ -1,0 +1,156 @@
+@import "../variable";
+body {
+    .hero {
+        display: grid;
+        min-height: calc(100vh - 90px);
+        grid-template-columns: 1fr 1fr;
+        .hero__left {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            h1 {
+                font-size: clamp(1.6rem, 3.6vw, 2.2rem);
+                margin-bottom: 25px;
+            }
+            p {
+                color: $color-3;
+                font-weight: 400;
+                font-size: clamp(0.8rem, 2.4vw, 1rem);
+                margin-bottom: 25px;
+            }
+            .hero__btn {
+                display: flex;
+                button {
+                    padding: 14px 13px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 4px;
+                    a {
+                        text-decoration: none;
+                        font-size: 15px;
+                    }
+                }
+                button:nth-child(1) {
+                    background-color: $color-1;
+                    border: none;
+                    -webkit-box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
+                    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
+                    margin-right: 20px;
+                    &:hover {
+                        outline: 2px solid $color-1;
+                        background: transparent;
+                    }
+                    &:hover a {
+                        color: $color-1;
+                    }
+                    a {
+                        color: #fff;
+                    }
+                }
+                button:nth-child(2) {
+                    background-color: rgb(241, 241, 241);
+                    border: none;
+                    -webkit-box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
+                    box-shadow: 0px 4px 10px -4px rgba(0, 0, 0, 0.3);
+                    &:hover {
+                        outline: 2px solid $color-3;
+                        background: transparent;
+                    }
+                    &:hover a {
+                        color: $color-3;
+                    }
+                    a {
+                        color: #333;
+                    }
+                }
+            }
+        }
+        .hero__right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // position: relative;
+            img {
+                max-width: 100%;
+                z-index: 10;
+                -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+                filter: drop-shadow(10px 9px 8px rgba(0, 0, 0, 0.205));
+            }
+            .blue-blob {
+                width: 40vw;
+                // right: -130px;
+                right: 0;
+                height: clamp(200px, 24.1vw, 300px);
+                margin-top: 110px;
+                border-top-left-radius: 180px;
+                border-bottom-left-radius: 180px;
+                position: absolute;
+                background: $color-1;
+            }
+        }
+    }
+}
+
+//responsive
+@media only screen and (max-width: 699px) {
+    body {
+        .container {
+            .hero {
+                display: grid;
+                min-height: calc(100vh - 90px);
+                gap: 25px;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                margin-bottom: 80px;
+                .hero__left {
+                    justify-content: center;
+                    align-items: center;
+                    order: 2;
+                    h1 {
+                        text-align: center;
+                        font-weight: 500;
+                    }
+                    p {
+                        text-align: center;
+                        br {
+                            display: none;
+                        }
+                    }
+                    button:nth-child(1) {
+                        margin: 5px;
+                    }
+                    button {
+                        margin: 5px;
+                        a {
+                            font-size: clamp(0.7rem, 2.5vw, 1rem);
+                        }
+                    }
+                }
+                .hero__right {
+                    .blue-blob {
+                        width: 80%;
+                        height: clamp(110px, 37.1vw, 300px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1207px) {
+    body {
+        .container {
+            .hero {
+                .hero__left {
+                    p {
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
