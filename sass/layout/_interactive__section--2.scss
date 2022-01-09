@@ -52,16 +52,15 @@ body {
                                 border-radius: 4px;
                                 background-color: #5368df;
                                 border: none;
-                                a {
-                                    font-size: .8rem;
-                                    color: #fff;
-                                    text-decoration: none;
-                                }
+                                font-size: .8rem;
+                                color: #fff;
+                                text-decoration: none;
+                                a {}
                                 &:hover {
                                     outline: 2px solid #5368df;
                                     background: transparent;
                                 }
-                                &:hover a {
+                                &:hover {
                                     color: $color-1
                                 }
                             }

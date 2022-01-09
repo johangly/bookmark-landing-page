@@ -43,7 +43,7 @@ body {
             }
             .accordion__content {
                 max-height: 0px;
-                max-width: 420px;
+                max-width: 500px;
                 overflow: hidden;
                 transition: max-height 0.2s ease-out;
                 p {
@@ -74,7 +74,7 @@ body {
                     outline: 2px solid #5368df;
                     background: transparent;
                 }
-                &:hover a {
+                &:hover {
                     color: $color-1
                 }
             }

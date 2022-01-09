@@ -139,9 +139,9 @@ accordion4.addEventListener('click', e => {
 // RESPONSIVE NAVBAR
 
 const $responsiveButton = d.querySelector('#responsive__button');
-const $responsiveNavbar = d.querySelector('#responsive__navbar');
+const $responsiveNavbar = d.querySelector('#responsive-navbar');
 const $logo = d.querySelector('#logo');
-const $nav = d.querySelector('#nav');
+const $nav = d.querySelector('#nav-id');
 
 $responsiveButton.addEventListener('click', e => {
     if ($responsiveNavbar.style.width) {
