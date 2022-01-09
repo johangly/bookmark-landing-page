@@ -3,7 +3,7 @@ body {
     .container {
         .interactive__section {
             // display: grid;
-            min-height: calc(35rem - 90px);
+            min-height: 23rem;
             // grid-template-columns: 1fr;
             display: flex;
             justify-content: center;
@@ -61,10 +61,12 @@ body {
                     margin-left: auto;
                     h2 {
                         margin-bottom: 25px;
+                        font-weight: 500;
                     }
                     p {
                         margin-bottom: 25px;
-                        font-size: clamp(0.8rem, 2.4vw, 0.9rem);
+                        font-size: clamp(0.8rem, 2.4vw, 1rem);
+                        line-height: 25px;
                         color: $color-3;
                     }
                     button {

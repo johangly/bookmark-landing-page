@@ -2,6 +2,7 @@
 body {
     .container {
         .article__2 {
+            margin-bottom: 10px;
             .button__container {
                 display: grid;
                 align-items: center;
@@ -14,6 +15,7 @@ body {
                     border-bottom: 1px solid hsla(229, 8%, 60%, 0.356);
                     position: relative;
                     background-color: transparent;
+                    font-size: 1rem;
                     &:hover {
                         color: $color-2;
                     }

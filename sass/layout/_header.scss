@@ -2,7 +2,7 @@
 body {
     .hero {
         display: grid;
-        min-height: calc(35rem - 90px);
+        min-height: calc(38rem - 90px);
         grid-template-columns: 1fr 1fr;
         // max-height: calc(35rem - 90px);
         .hero__left {
@@ -11,7 +11,7 @@ body {
             justify-content: center;
             flex-direction: column;
             h1 {
-                font-size: clamp(1.7rem, 3.6vw, 2.1rem);
+                font-size: clamp(1.7rem, 4.1vw, 3rem);
                 margin-bottom: 25px;
                 font-weight: 500;
             }
