@@ -2,14 +2,19 @@
 body {
     .container {
         .interactive__section {
-            display: grid;
-            min-height: 60vh;
-            grid-template-columns: 1fr;
+            // display: grid;
+            min-height: calc(35rem - 90px);
+            // grid-template-columns: 1fr;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-bottom: 80px;
+            // max-height: calc(35rem - 90px);
             .hidden {
                 display: none !important;
             }
             .section__1 {
+                max-height: 425px;
                 display: grid;
                 align-items: center;
                 justify-content: center;

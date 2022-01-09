@@ -12,7 +12,7 @@ body {
         top: 0;
         .nav__container {
             width: 80%;
-            height: 90px;
+            height: 120px;
             align-items: center;
             top: 0;
             z-index: 30;
@@ -74,12 +74,15 @@ body {
 @media only screen and (max-width: 786px) {
     body {
         .nav {
-            div:nth-child(3) {
-                a {
-                    margin-left: 20px;
-                }
-                button {
-                    margin-left: 20px;
+            .nav__container {
+                height: 90px;
+                div:nth-child(3) {
+                    a {
+                        margin-left: 20px;
+                    }
+                    button {
+                        margin-left: 20px;
+                    }
                 }
             }
         }
